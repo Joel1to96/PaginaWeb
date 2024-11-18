@@ -483,3 +483,84 @@ section {
     padding: 40px 20px;
     text-align: center;
 }
+
+/* Estilos para la cuadrícula de productos */
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #FF006C;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.5rem;
+    color: #FF006C;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-card .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%;
+    }
+}
+
+/* Resaltar enlaces activos en la barra lateral */
+.sidebar a.active {
+    color: #FF006C;
+    font-weight: bold;
+}
+
+/* Opcional: Estilos para subfamilias */
+.subfamilias-list {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.subfamilias-list li a {
+    font-size: 0.9rem;
+}
+
+.subfamilias-list li a.active {
+    color: #FF006C;
+    font-weight: bold;
+}
