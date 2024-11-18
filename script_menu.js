@@ -1,16 +1,29 @@
 // script.js
 
+// Función para obtener los parámetros de la URL
+function getURLParameter(name) {
+    const value = decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)')
+        .exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+    console.log(`getURLParameter('${name}') = '${value}'`);
+    return value;
+}
+
 let familiasData = []; // Array para almacenar los datos organizados
 let menuItemsContainer = document.getElementById('menu-items');
 let sidebarMenu = document.getElementById('sidebar-menu');
 
 fetch('menu.json')
-    .then(response => response.json())
+    .then(response => {
+        console.log('Fetch realizado correctamente.');
+        return response.json();
+    })
     .then(data => {
+        console.log('Datos del menú cargados:', data);
         familiasData = []; // Reiniciar la variable
 
         // Organizar los artículos por familias y subfamilias utilizando arrays
         data.forEach(item => {
+            console.log('Procesando artículo:', item);
             const familiaNombre = item.Familia;
             const ordenFamilia = parseInt(item.OrdenFamilia) || 999;
             const subfamiliaNombre = item.Subfamilia || null;
@@ -27,6 +40,7 @@ fetch('menu.json')
                     articulos: []
                 };
                 familiasData.push(familia);
+                console.log(`Familia añadida: ${familiaNombre}`);
             }
 
             if (subfamiliaNombre) {
@@ -39,23 +53,27 @@ fetch('menu.json')
                         articulos: []
                     };
                     familia.subfamilias.push(subfamilia);
+                    console.log(`Subfamilia añadida: ${subfamiliaNombre} en familia ${familiaNombre}`);
                 }
                 // Añadir el artículo a la subfamilia
                 subfamilia.articulos.push({
                     ...item,
                     orden: ordenArticulo
                 });
+                console.log(`Artículo añadido a subfamilia: ${item.Artículo}`);
             } else {
                 // Añadir el artículo directamente a la familia
                 familia.articulos.push({
                     ...item,
                     orden: ordenArticulo
                 });
+                console.log(`Artículo añadido a familia: ${item.Artículo}`);
             }
         });
 
         // Ordenar las familias
         familiasData.sort((a, b) => a.orden - b.orden);
+        console.log('Familias organizadas:', familiasData);
 
         // Generar la barra lateral con las familias
         familiasData.forEach(familia => {
@@ -123,6 +141,9 @@ fetch('menu.json')
 
             sidebarMenu.appendChild(familiaLi);
         });
+
+        // Después de generar la barra lateral, procesar los parámetros de la URL
+        procesarParametrosURL();
     })
     .catch(error => {
         console.error('Error al cargar el menú:', error);
@@ -130,14 +151,26 @@ fetch('menu.json')
 
 // Función para cargar y mostrar los artículos de una subfamilia o familia
 function cargarArticulos(familiaNombre, subfamiliaNombre) {
+    console.log(`Cargando artículos de familia: ${familiaNombre}, subfamilia: ${subfamiliaNombre}`);
     menuItemsContainer.innerHTML = ''; // Limpiar contenido anterior
 
     let familia = familiasData.find(f => f.nombre === familiaNombre);
+    if (!familia) {
+        console.log(`Familia no encontrada: ${familiaNombre}`);
+        menuItemsContainer.innerHTML = '<p>La categoría seleccionada no existe.</p>';
+        return;
+    }
+
     let articulos = [];
     let titulo = '';
 
     if (subfamiliaNombre) {
         let subfamilia = familia.subfamilias.find(s => s.nombre === subfamiliaNombre);
+        if (!subfamilia) {
+            console.log(`Subfamilia no encontrada: ${subfamiliaNombre} en familia ${familiaNombre}`);
+            menuItemsContainer.innerHTML = '<p>La subcategoría seleccionada no existe.</p>';
+            return;
+        }
         articulos = subfamilia.articulos.slice(); // Copiar el array
         titulo = `${familiaNombre} - ${subfamiliaNombre}`;
     } else {
@@ -146,6 +179,7 @@ function cargarArticulos(familiaNombre, subfamiliaNombre) {
     }
 
     if (articulos.length > 0) {
+        console.log(`Artículos encontrados: ${articulos.length}`);
         // Ordenar los artículos
         articulos.sort((a, b) => a.orden - b.orden);
 
@@ -157,6 +191,7 @@ function cargarArticulos(familiaNombre, subfamiliaNombre) {
         itemsDiv.classList.add('menu-items');
 
         articulos.forEach(item => {
+            console.log('Mostrando artículo:', item.Artículo);
             const menuItem = document.createElement('div');
             menuItem.classList.add('menu-item');
 
@@ -175,7 +210,59 @@ function cargarArticulos(familiaNombre, subfamiliaNombre) {
 
         menuItemsContainer.appendChild(itemsDiv);
     } else {
+        console.log('No hay artículos en esta categoría.');
         menuItemsContainer.innerHTML = '<p>No hay artículos disponibles en esta categoría.</p>';
     }
 }
 
+// Función para procesar los parámetros de la URL y cargar la familia/subfamilia correspondiente
+function procesarParametrosURL() {
+    const familiaParam = getURLParameter('familia');
+    const subfamiliaParam = getURLParameter('subfamilia');
+
+    console.log(`Parámetros URL - familia: ${familiaParam}, subfamilia: ${subfamiliaParam}`);
+
+    if (familiaParam) {
+        const familiaNombre = decodeURIComponent(familiaParam);
+        if (subfamiliaParam) {
+            const subfamiliaNombre = decodeURIComponent(subfamiliaParam);
+            cargarArticulos(familiaNombre, subfamiliaNombre);
+            expandirMenu(familiaNombre, subfamiliaNombre);
+        } else {
+            cargarArticulos(familiaNombre, null);
+            expandirMenu(familiaNombre);
+        }
+    }
+}
+
+// Función para expandir el menú lateral y resaltar la familia/subfamilia seleccionada
+function expandirMenu(familiaNombre, subfamiliaNombre = null) {
+    console.log(`Expandiendo menú - familia: ${familiaNombre}, subfamilia: ${subfamiliaNombre}`);
+    // Ocultar todas las subfamilias
+    document.querySelectorAll('.subfamilias-list').forEach(ul => ul.style.display = 'none');
+    // Remover clases activas
+    document.querySelectorAll('.familia-link.active').forEach(link => link.classList.remove('active'));
+    document.querySelectorAll('.subfamilia-link.active').forEach(link => link.classList.remove('active'));
+
+    // Buscar el enlace de la familia
+    const familiaLink = document.querySelector(`.familia-link[data-familia="${familiaNombre}"]`);
+    if (familiaLink) {
+        familiaLink.classList.add('active');
+        // Si tiene subfamilias, mostrar el submenú
+        const subfamiliasList = familiaLink.nextElementSibling;
+        if (subfamiliasList) {
+            subfamiliasList.style.display = 'block';
+            if (subfamiliaNombre) {
+                // Resaltar la subfamilia
+                const subfamiliaLink = subfamiliasList.querySelector(`.subfamilia-link[data-subfamilia="${subfamiliaNombre}"]`);
+                if (subfamiliaLink) {
+                    subfamiliaLink.classList.add('active');
+                } else {
+                    console.log(`SubfamiliaLink no encontrado para: ${subfamiliaNombre}`);
+                }
+            }
+        }
+    } else {
+        console.log(`FamiliaLink no encontrado para: ${familiaNombre}`);
+    }
+}
