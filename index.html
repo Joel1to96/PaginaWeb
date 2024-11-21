@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- Enlace al archivo CSS externo -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,9 +20,13 @@
         <img src="logo.png" alt="Logo de Chicken Crunchers">
         <nav>
             <a href="index.html">Inicio</a>
-            <a href="menu.html">Menu</a>
+            <a href="menu.html">Menú</a>
+            <a href="#" id="dark-mode-toggle" aria-label="Cambiar entre modo claro y oscuro">
+                <i class="fas fa-moon"></i>
+            </a>
         </nav>
     </header>
+    
 
     <!-- Sección de Inicio -->
     <section id="inicio" class="hero">
@@ -29,7 +36,10 @@
             <a href="menu.html" class="btn">Ver menú</a>
         </div>
         <div class="hero-right">
-            <img src="DRUMBSTICKS.png" alt="Pollo Frito">
+            <!-- Añadimos el contenedor de la imagen -->
+            <div class="image-container">
+                <img src="DRUMBSTICKS.png" alt="Pollo Frito">
+            </div>
         </div>
     </section>
 
@@ -39,21 +49,21 @@
     <p>No te decides? Estas son nuestras opciones más populares.</p>
 
     <div class="product-grid">
-        <div class="product-card">
+        <div class="product-card" data-aos="zoom-out">
             <img src="imagenes/DRUMBSTICKS.png" alt="Muslos">
             <h3>Muslos</h3>
             <p>Deliciosos muslos de pollo crujientes y jugosos.</p>
             <a href="menu.html?familia=POLLO%20POR%20PIEZAS&subfamilia=MUSLOS" class="btn">Ver más</a>
         </div>
-        <div class="product-card">
+        <div class="product-card" data-aos="zoom-out">
             <img src="imagenes/wrap.png" alt="Tzatziki Wrap">
             <h3>Tzatziki Wrap</h3>
             <p>Wrap de pollo con salsa tzatziki y vegetales frescos.</p>
             <a href="menu.html?familia=HAMBURGUESAS%20Y%20WRAPS" class="btn">Ver más</a>
         </div>
-        <div class="product-card">
+        <div class="product-card" data-aos="zoom-out">
             <img src="imagenes/papas locas.png" alt="Papas con Bacon">
-            <h3>Papas Locas</h3>
+            <h3>Bacon Dream</h3>
             <p>Papas fritas cubiertas con queso cheddar y MERMELADA DE BACON.</p>
             <a href="menu.html?familia=PARA%20ACOMPAÑAR" class="btn">Ver más</a>
         </div>
@@ -85,7 +95,7 @@
     <!-- Chatbot Widget -->
 <div id="chatbot">
     <div id="chatbot-header">
-        <span>Chatbot</span>
+        <span>Hola, soy Kirico; en que puedo ayudarte?</span>
         <button id="chatbot-close">&times;</button>
     </div>
     <div id="chatbot-messages">
@@ -96,10 +106,28 @@
         <button id="chatbot-send">Enviar</button>
     </div>
 </div>
-<button id="chatbot-toggle">💬</button>
+<button id="chatbot-toggle">
+    <img src="mascota.png" alt="Mascota" id="chatbot-icon">
+</button>
 
 <!-- Enlace al script del chatbot -->
 <script src="chatbot.js"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+
+<!-- Imagen de la mascota -->
+<!-- Contenedor de la mascota -->
+<div id="mascota-container">
+    <img src="mascota.png" alt="Mascota" id="mascota-peek">
+</div>
+<!-- Enlace al script de la mascota -->
+<script src="mascota.js"></script>
 
 
 </body>
