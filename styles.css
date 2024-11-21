@@ -140,61 +140,7 @@ a {
     color: #FF006C;
 }
 
-/* Carrusel */
-.carousel-container {
-    position: relative;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
 
-.carousel-slide {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: auto;
-}
-
-/* Controles del Carrusel */
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #FF006C;
-    border: none;
-    font-size: 2rem;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    user-select: none;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.carousel-control.prev {
-    left: 10px;
-}
-
-.carousel-control.next {
-    right: 10px;
-}
-
-.carousel-container:hover .carousel-control {
-    opacity: 1;
-}
-
-.carousel-control:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-}
 
 /* Pie de página */
 .footer {
@@ -414,7 +360,7 @@ footer a img:hover {
 .pagina-menu .menu-item {
     width: calc(33.333% - 20px);
     margin: 10px;
-    background-color: #ffffff10;
+    background-color: #ffffff00;
     padding: 10px;
     text-align: center;
     border-radius: 10px;
@@ -442,7 +388,7 @@ footer a img:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    background-color: #ffffff00;
 }
 
 .pagina-menu .image-container img {
@@ -573,7 +519,7 @@ section {
     right: 20px;
     width: 300px;
     max-height: 400px;
-    background-color: #fff;
+    background-color: #FF006C;
     border: 1px solid #FF006C;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -585,7 +531,7 @@ section {
 
 #chatbot-header {
     background-color: #FF006C;
-    color: #fff;
+    color: #f8f7f8;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -638,7 +584,7 @@ section {
 #chatbot-send:hover {
     background-color: #e6005f;
 }
-
+/*
 #chatbot-toggle {
     position: fixed;
     bottom: 20px;
@@ -654,9 +600,10 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
-
+*/
 #chatbot-toggle:hover {
     background-color: #e6005f;
+    border-radius: 40px;
 }
 
 /* Estilos para los mensajes */
@@ -690,4 +637,384 @@ section {
     background-color: #e5e5ea;
     color: #000;
     border-bottom-left-radius: 0;
+}
+
+
+/* Estilos para el chatbot 
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: #fff;
+    border: 2px solid #FF69B4;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+#chatbot-header {
+    background-color: #FF69B4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#chatbot-input-container {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+#chatbot-input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#chatbot-send {
+    background-color: #FF69B4;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+*/
+#chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#chatbot-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/* Estilos para los mensajes */
+.chatbot-message {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.chatbot-message.mascota {
+    flex-direction: row;
+}
+
+.chatbot-message.user {
+    flex-direction: row-reverse;
+}
+
+.chatbot-message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.chatbot-message .message-content {
+    max-width: 70%;
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.chatbot-message.mascota .message-content {
+    background-color: #FF69B4;
+    color: #fff;
+}
+
+.chatbot-message.user .message-content {
+    background-color: #e0e0e0;
+}
+
+#chatbot-close {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+/* Animación de flotación */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para el contenedor de la imagen */
+.image-container {
+    /* Aplicamos el zoom-in al cargar */
+    animation: zoomIn 1s ease-in-out;
+}
+
+/* Estilos para la imagen */
+.hero-right img {
+    /* Iniciamos la flotación después del zoom-in */
+    animation: float 1s ease-in-out infinite;
+    animation-delay: 1s; /* Esperamos a que termine el zoom-in */
+}
+
+/* Modo Oscuro */
+body.dark-mode {
+    background-color: #141414;
+    color: #ffffff;
+}
+
+body.dark-mode .header {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .header nav a {
+    color: #ffffff;
+}
+
+body.dark-mode .header nav a:hover {
+    color: #e6005f;
+}
+
+body.dark-mode .hero {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .hero h1,
+body.dark-mode .hero p {
+    color: #ffffff;
+}
+
+body.dark-mode .btn {
+    background-color: #e6005f;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #e6005f;
+}
+
+body.dark-mode .product-card {
+    background-color: #1e1e1e;
+    border-color: #e6005f;
+}
+
+body.dark-mode .product-card h3,
+body.dark-mode .product-card p {
+    color: #ffffff;
+}
+
+body.dark-mode .footer {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .footer p,
+body.dark-mode .footer a {
+    color: #ffffff;
+}
+body.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode footer p,
+body.dark-mode footer a {
+    color: #ffffff;
+}
+
+/* Transiciones para un cambio suave */
+body, .header, .hero, .product-card, .footer {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Mascota */
+:root {
+    --visible-percentage: 50%; /* Ajusta este valor al porcentaje deseado */
+}
+
+/* Contenedor de la mascota */
+#mascota-container {
+    position: fixed;
+    overflow: hidden;
+    width: 100px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* La altura se ajustará dinámicamente */
+    z-index: 1000;
+    /* Posicionamiento inicial; se ajustará según el lado */
+}
+
+/* Imagen de la mascota */
+#mascota-peek {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    /* El posicionamiento se ajustará dinámicamente */
+}
+
+
+/* Estilos para la mascota */
+#mascota-peek {
+    position: fixed;
+    width: 100px;
+    transition: transform 1s ease-in-out;
+    z-index: 1000;
+    cursor: pointer;
+    clip-path: inset(var(--mascota-clip));
+}
+
+/* Clases de clip */
+.clip-bottom {
+    --mascota-clip: calc(100% - var(--mascota-visible)) 0 0 0;
+}
+
+.clip-top {
+    --mascota-clip: 0 0 calc(100% - var(--mascota-visible)) 0;
+}
+
+.clip-side {
+    --mascota-clip: calc(100% - var(--mascota-visible)) 0 0 0;
+}
+
+
+/* Aparición desde abajo */
+.peek-bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Aparición desde arriba */
+.peek-top {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Aparición desde la izquierda */
+.peek-left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+/* Aparición desde la derecha */
+.peek-right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+/* Rotaciones para la mascota */
+.rotate-0 {
+    transform: rotate(0deg);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
+.rotate--45 {
+    transform: rotate(-45deg);
+}
+
+.flip-horizontal {
+    transform: scaleX(-1);
+}
+
+
+
+
+/* Estilos para el speech bubble */
+.speech-bubble {
+    position: fixed;
+    max-width: 200px;
+    background: #FF69B4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1001;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.speech-bubble.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Flechas de la burbuja */
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+/* Flechas de la burbuja (ajustadas) */
+.speech-left::after {
+    top: 50%;
+    left: -20px;
+    border: 10px solid transparent;
+    border-right-color: #FF69B4;
+    border-left: 0;
+    margin-top: -10px;
+    transform: rotate(0deg); /* Sin rotación adicional */
+}
+
+.speech-right::after {
+    top: 50%;
+    right: -20px;
+    border: 10px solid transparent;
+    border-left-color: #FF69B4;
+    border-right: 0;
+    margin-top: -10px;
+    transform: rotate(0deg);
+}
+
+.speech-top::after {
+    left: 50%;
+    top: -20px;
+    border: 10px solid transparent;
+    border-bottom-color: #FF69B4;
+    border-top: 0;
+    margin-left: -10px;
+    transform: rotate(0deg);
+}
+
+.speech-bottom::after {
+    left: 50%;
+    bottom: -20px;
+    border: 10px solid transparent;
+    border-top-color: #FF69B4;
+    border-bottom: 0;
+    margin-left: -10px;
+    transform: rotate(0deg);
 }
