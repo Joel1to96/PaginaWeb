@@ -266,3 +266,28 @@ function expandirMenu(familiaNombre, subfamiliaNombre = null) {
         console.log(`FamiliaLink no encontrado para: ${familiaNombre}`);
     }
 }
+
+
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const darkModeIcon = darkModeToggle.querySelector('i');
+
+// Verificar si el usuario tiene una preferencia guardada
+if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+    darkModeIcon.classList.remove('fa-moon');
+    darkModeIcon.classList.add('fa-sun');
+}
+
+darkModeToggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        darkModeIcon.classList.remove('fa-moon');
+        darkModeIcon.classList.add('fa-sun');
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        darkModeIcon.classList.remove('fa-sun');
+        darkModeIcon.classList.add('fa-moon');
+        localStorage.setItem('darkMode', 'disabled');
+    }
+});
