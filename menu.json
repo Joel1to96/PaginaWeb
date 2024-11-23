@@ -4,725 +4,725 @@
         "Artículo": "1 CONTRAMUSLO + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "CONTRAMUSLO",
-        "Precio": "3.50",
+        "Precio": 3.5,
         "Imagen": "CONTRAMUSLO.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "1",
-        "OrdenArtículo": "1"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 1,
+        "OrdenArtículo": 1
     },
     {
         "Referencia": "121",
         "Artículo": "1 MUSLO + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "MUSLOS",
-        "Precio": "2.90",
+        "Precio": 2.9,
         "Imagen": "DRUMBSTICKS.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "2",
-        "OrdenArtículo": "1"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 2,
+        "OrdenArtículo": 1
     },
     {
         "Referencia": "135",
         "Artículo": "11 TENDERS + 2 SALSAS",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "TENDER STRIPS",
-        "Precio": "14.90",
+        "Precio": 14.9,
         "Imagen": "tenders.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "3",
-        "OrdenArtículo": "5"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 3,
+        "OrdenArtículo": 5
     },
     {
         "Referencia": "145",
         "Artículo": "12 ALITAS + 2 SALSAS",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "ALITAS SIN REBOZAR",
-        "Precio": "11.90",
+        "Precio": 11.9,
         "Imagen": "AlitasSinRebozar.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "4",
-        "OrdenArtículo": "5"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 4,
+        "OrdenArtículo": 5
     },
     {
         "Referencia": "155",
         "Artículo": "12 ALITAS REBOZADAS + 2 SALSAS",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "ALITAS REBOZADAS",
-        "Precio": "11.90",
+        "Precio": 11.9,
         "Imagen": "AlitasRebozadas2.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "5",
-        "OrdenArtículo": "5"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 5,
+        "OrdenArtículo": 5
     },
     {
         "Referencia": "136",
         "Artículo": "14 TENDERS + 3 SALSAS",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "TENDER STRIPS",
-        "Precio": "18.90",
+        "Precio": 18.9,
         "Imagen": "tenders.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "3",
-        "OrdenArtículo": "6"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 3,
+        "OrdenArtículo": 6
     },
     {
         "Referencia": "141",
         "Artículo": "2 ALITAS + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "ALITAS SIN REBOZAR",
-        "Precio": "2.50",
+        "Precio": 2.5,
         "Imagen": "AlitasSinRebozar.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "4",
-        "OrdenArtículo": "1"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 4,
+        "OrdenArtículo": 1
     },
     {
         "Referencia": "151",
         "Artículo": "2 ALITAS REBOZADAS + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "ALITAS REBOZADAS",
-        "Precio": "2.50",
+        "Precio": 2.5,
         "Imagen": "alitasRebozadas.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "5",
-        "OrdenArtículo": "1"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 5,
+        "OrdenArtículo": 1
     },
     {
         "Referencia": "112",
         "Artículo": "2 CONTRAMUSLO + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "CONTRAMUSLO",
-        "Precio": "6.90",
+        "Precio": 6.9,
         "Imagen": "CONTRAMUSLO.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "1",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 1,
+        "OrdenArtículo": 2
     },
     {
         "Referencia": "131",
         "Artículo": "2 TENDERS + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "TENDER STRIPS",
-        "Precio": "2.90",
+        "Precio": 2.9,
         "Imagen": "Tenders2.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "3",
-        "OrdenArtículo": "1"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 3,
+        "OrdenArtículo": 1
     },
     {
         "Referencia": "156",
         "Artículo": "24 ALITAS REBOZADAS + 3 SALSAS",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "ALITAS REBOZADAS",
-        "Precio": "21.90",
+        "Precio": 21.9,
         "Imagen": "AlitasRebozadas2.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "5",
-        "OrdenArtículo": "6"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 5,
+        "OrdenArtículo": 6
     },
     {
         "Referencia": "113",
         "Artículo": "3 CONTRAMUSLOS + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "CONTRAMUSLO",
-        "Precio": "9.90",
+        "Precio": 9.9,
         "Imagen": "CONTRAMUSLO.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "1",
-        "OrdenArtículo": "3"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 1,
+        "OrdenArtículo": 3
     },
     {
         "Referencia": "122",
         "Artículo": "3 MUSLOS + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "MUSLOS",
-        "Precio": "7.90",
+        "Precio": 7.9,
         "Imagen": "DRUMBSTICKS.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "2",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 2,
+        "OrdenArtículo": 2
     },
     {
         "Referencia": "132",
         "Artículo": "3 TENDERS + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "TENDER STRIPS",
-        "Precio": "4.40",
+        "Precio": 4.4,
         "Imagen": "Tenders2.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "3",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 3,
+        "OrdenArtículo": 2
     },
     {
         "Referencia": "142",
         "Artículo": "4 ALITAS + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "ALITAS SIN REBOZAR",
-        "Precio": "4.70",
+        "Precio": 4.7,
         "Imagen": "AlitasSinRebozar.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "4",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 4,
+        "OrdenArtículo": 2
     },
     {
         "Referencia": "152",
         "Artículo": "4 ALITAS REBOZADAS + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "ALITAS REBOZADAS",
-        "Precio": "4.70",
+        "Precio": 4.7,
         "Imagen": "alitasRebozadas.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "5",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 5,
+        "OrdenArtículo": 2
     },
     {
         "Referencia": "114",
         "Artículo": "4 CONTRAMUSLOS + 2 SALSAS",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "CONTRAMUSLO",
-        "Precio": "12.90",
+        "Precio": 12.9,
         "Imagen": "CONTRAMUSLO.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "1",
-        "OrdenArtículo": "4"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 1,
+        "OrdenArtículo": 4
     },
     {
         "Referencia": "123",
         "Artículo": "5 MUSLOS + 2 SALSAS",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "MUSLOS",
-        "Precio": "12.90",
+        "Precio": 12.9,
         "Imagen": "DRUMBSTICKS.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "2",
-        "OrdenArtículo": "3"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 2,
+        "OrdenArtículo": 3
     },
     {
         "Referencia": "133",
         "Artículo": "5 TENDERS + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "TENDER STRIPS",
-        "Precio": "7.30",
+        "Precio": 7.3,
         "Imagen": "tenders.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "3",
-        "OrdenArtículo": "3"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 3,
+        "OrdenArtículo": 3
     },
     {
         "Referencia": "143",
         "Artículo": "6 ALITAS + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "ALITAS SIN REBOZAR",
-        "Precio": "6.90",
+        "Precio": 6.9,
         "Imagen": "AlitasSinRebozar.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "4",
-        "OrdenArtículo": "3"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 4,
+        "OrdenArtículo": 3
     },
     {
         "Referencia": "153",
         "Artículo": "6 ALITAS REBOZADAS + 1 SALSA",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "ALITAS REBOZADAS",
-        "Precio": "6.90",
+        "Precio": 6.9,
         "Imagen": "AlitasRebozadas2.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "5",
-        "OrdenArtículo": "3"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 5,
+        "OrdenArtículo": 3
     },
     {
         "Referencia": "115",
         "Artículo": "6 CONTRAMUSLOS + 2 SALSAS",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "CONTRAMUSLO",
-        "Precio": "18.90",
+        "Precio": 18.9,
         "Imagen": "CONTRAMUSLO.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "1",
-        "OrdenArtículo": "5"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 1,
+        "OrdenArtículo": 5
     },
     {
         "Referencia": "124",
         "Artículo": "6 MUSLOS + 2 SALSAS",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "MUSLOS",
-        "Precio": "14.90",
+        "Precio": 14.9,
         "Imagen": "DRUMBSTICKS.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "2",
-        "OrdenArtículo": "4"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 2,
+        "OrdenArtículo": 4
     },
     {
         "Referencia": "144",
         "Artículo": "8 ALITAS + 2 SALSAS",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "ALITAS SIN REBOZAR",
-        "Precio": "8.70",
+        "Precio": 8.7,
         "Imagen": "AlitasSinRebozar.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "4",
-        "OrdenArtículo": "4"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 4,
+        "OrdenArtículo": 4
     },
     {
         "Referencia": "154",
         "Artículo": "8 ALITAS REBOZADAS + 2 SALSAS",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "ALITAS REBOZADAS",
-        "Precio": "8.70",
+        "Precio": 8.7,
         "Imagen": "AlitasRebozadas2.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "5",
-        "OrdenArtículo": "4"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 5,
+        "OrdenArtículo": 4
     },
     {
         "Referencia": "134",
         "Artículo": "8 TENDERS + 2 SALSAS",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "TENDER STRIPS",
-        "Precio": "11.50",
+        "Precio": 11.5,
         "Imagen": "tenders.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "3",
-        "OrdenArtículo": "4"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 3,
+        "OrdenArtículo": 4
     },
     {
         "Referencia": "61",
         "Artículo": "AGUA",
         "Familia": "REFRESCOS",
         "Subfamilia": "",
-        "Precio": "1.90",
+        "Precio": 1.9,
         "Imagen": "agua.png",
-        "OrdenFamilia": "6",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "1"
+        "OrdenFamilia": 6,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 1
     },
     {
         "Referencia": "62",
         "Artículo": "AGUA GAS",
         "Familia": "REFRESCOS",
         "Subfamilia": "",
-        "Precio": "1.90",
+        "Precio": 1.9,
         "Imagen": "agua gas.png",
-        "OrdenFamilia": "6",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 6,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 2
     },
     {
         "Referencia": "63",
         "Artículo": "APPLETISER",
         "Familia": "REFRESCOS",
         "Subfamilia": "",
-        "Precio": "3.50",
+        "Precio": 3.5,
         "Imagen": "appletiser.png",
-        "OrdenFamilia": "6",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "3"
+        "OrdenFamilia": 6,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 3
     },
     {
         "Referencia": "81",
         "Artículo": "BATIDO CLASICO CHOCOLATE",
         "Familia": "POSTRES",
         "Subfamilia": "",
-        "Precio": "3.90",
+        "Precio": 3.9,
         "Imagen": "chocolate.png",
-        "OrdenFamilia": "8",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "1"
+        "OrdenFamilia": 8,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 1
     },
     {
         "Referencia": "82",
         "Artículo": "BATIDO CLASICO FRESA",
         "Familia": "POSTRES",
         "Subfamilia": "",
-        "Precio": "3.90",
+        "Precio": 3.9,
         "Imagen": "fresa2.png",
-        "OrdenFamilia": "8",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 8,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 2
     },
     {
         "Referencia": "83",
         "Artículo": "BATIDO CLASICO VAINILLA",
         "Familia": "POSTRES",
         "Subfamilia": "",
-        "Precio": "3.90",
+        "Precio": 3.9,
         "Imagen": "vainilla3.png",
-        "OrdenFamilia": "8",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "3"
+        "OrdenFamilia": 8,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 3
     },
     {
         "Referencia": "64",
         "Artículo": "COCA COLA",
         "Familia": "REFRESCOS",
         "Subfamilia": "",
-        "Precio": "2.90",
+        "Precio": 2.9,
         "Imagen": "coca cola.png",
-        "OrdenFamilia": "6",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "4"
+        "OrdenFamilia": 6,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 4
     },
     {
         "Referencia": "65",
         "Artículo": "COCA COLA ZERO",
         "Familia": "REFRESCOS",
         "Subfamilia": "",
-        "Precio": "2.90",
+        "Precio": 2.9,
         "Imagen": "coca cola zero.png",
-        "OrdenFamilia": "6",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "5"
+        "OrdenFamilia": 6,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 5
     },
     {
         "Referencia": "71",
         "Artículo": "CORONA",
         "Familia": "CERVEZAS",
         "Subfamilia": "",
-        "Precio": "3.90",
+        "Precio": 3.9,
         "Imagen": "corona.png",
-        "OrdenFamilia": "7",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "1"
+        "OrdenFamilia": 7,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 1
     },
     {
         "Referencia": "41",
         "Artículo": "CREMA DE BACON",
         "Familia": "SALSAS CASERAS",
         "Subfamilia": "",
-        "Precio": "1.90",
+        "Precio": 1.9,
         "Imagen": "crema de bacon.png",
-        "OrdenFamilia": "4",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "1"
-    },
-    {
-        "Referencia": "74",
-        "Artículo": "CRUNCHER SUNDAE",
-        "Familia": "POSTRES",
-        "Subfamilia": "",
-        "Precio": "2.90",
-        "Imagen": "CRUNCHER SUNDAE.png",
-        "OrdenFamilia": "7",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "4"
+        "OrdenFamilia": 4,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 1
     },
     {
         "Referencia": "72",
         "Artículo": "DORADA",
         "Familia": "CERVEZAS",
         "Subfamilia": "",
-        "Precio": "2.90",
+        "Precio": 2.9,
         "Imagen": "dorada.png",
-        "OrdenFamilia": "7",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 7,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 2
     },
     {
         "Referencia": "52",
         "Artículo": "ENSALADA DE COL",
         "Familia": "PARA ACOMPAÑAR",
         "Subfamilia": "",
-        "Precio": "3.90",
+        "Precio": 3.9,
         "Imagen": "ensalada de col.png",
-        "OrdenFamilia": "5",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 5,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 2
     },
     {
         "Referencia": "53",
         "Artículo": "ENSALADA WAKAME",
         "Familia": "PARA ACOMPAÑAR",
         "Subfamilia": "",
-        "Precio": "4.50",
+        "Precio": 4.5,
         "Imagen": "wakame.png",
-        "OrdenFamilia": "5",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "3"
+        "OrdenFamilia": 5,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 3
     },
     {
         "Referencia": "66",
         "Artículo": "FANTA LIMON",
         "Familia": "REFRESCOS",
         "Subfamilia": "",
-        "Precio": "2.90",
+        "Precio": 2.9,
         "Imagen": "fanta limon.png",
-        "OrdenFamilia": "6",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "6"
+        "OrdenFamilia": 6,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 6
     },
     {
         "Referencia": "67",
         "Artículo": "FANTA NARANJA",
         "Familia": "REFRESCOS",
         "Subfamilia": "",
-        "Precio": "2.90",
+        "Precio": 2.9,
         "Imagen": "fanta naranja.png",
-        "OrdenFamilia": "6",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "7"
+        "OrdenFamilia": 6,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 7
     },
     {
         "Referencia": "54",
         "Artículo": "MAC & CHEESE",
         "Familia": "PARA ACOMPAÑAR",
         "Subfamilia": "",
-        "Precio": "4.90",
+        "Precio": 4.9,
         "Imagen": "mac & cheese.png",
-        "OrdenFamilia": "5",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "4"
+        "OrdenFamilia": 5,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 4
     },
     {
         "Referencia": "42",
         "Artículo": "KETCHUP HEINZ",
         "Familia": "SALSAS CASERAS",
         "Subfamilia": "",
-        "Precio": "0.90",
+        "Precio": 0.9,
         "Imagen": "ketchup heinz.png",
-        "OrdenFamilia": "4",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 4,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 2
     },
     {
         "Referencia": "68",
         "Artículo": "MONSTER ENERGY",
         "Familia": "REFRESCOS",
         "Subfamilia": "",
-        "Precio": "3.90",
+        "Precio": 3.9,
         "Imagen": "monster energy.png",
-        "OrdenFamilia": "6",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "8"
+        "OrdenFamilia": 6,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 8
     },
     {
         "Referencia": "69",
         "Artículo": "NESTEA MANGO PIÑA",
         "Familia": "REFRESCOS",
         "Subfamilia": "",
-        "Precio": "2.90",
-        "Imagen": "nestea mango piña.png",
-        "OrdenFamilia": "6",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "9"
+        "Precio": 2.9,
+        "Imagen": "nestea.png",
+        "OrdenFamilia": 6,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 9
     },
     {
         "Referencia": "55",
         "Artículo": "PAPAS FRITAS",
         "Familia": "PARA ACOMPAÑAR",
         "Subfamilia": "",
-        "Precio": "3.90",
+        "Precio": 3.9,
         "Imagen": "papas fritas.png",
-        "OrdenFamilia": "5",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "5"
+        "OrdenFamilia": 5,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 5
     },
     {
         "Referencia": "56",
         "Artículo": "PAPAS RED",
         "Familia": "PARA ACOMPAÑAR",
         "Subfamilia": "",
-        "Precio": "4.50",
+        "Precio": 4.5,
         "Imagen": "PAPAS RED.png",
-        "OrdenFamilia": "5",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "6"
+        "OrdenFamilia": 5,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 6
     },
     {
         "Referencia": "161",
         "Artículo": "POPCORN BBQ +-15 pcs ",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "POPCORN NUGGETS",
-        "Precio": "8.90",
+        "Precio": 8.9,
         "Imagen": "NuggetsBBQ.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "6",
-        "OrdenArtículo": "1"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 6,
+        "OrdenArtículo": 1
     },
     {
         "Referencia": "162",
         "Artículo": "POPCORN PICANTES +-15 pcs ",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "POPCORN NUGGETS",
-        "Precio": "8.90",
+        "Precio": 8.9,
         "Imagen": "NuggetsPicantes.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "6",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 6,
+        "OrdenArtículo": 2
     },
     {
         "Referencia": "163",
         "Artículo": "POPCORN HONEY BUTTER +-15 pcs ",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "POPCORN NUGGETS",
-        "Precio": "8.90",
+        "Precio": 8.9,
         "Imagen": "NuggetsHoneyB.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "6",
-        "OrdenArtículo": "3"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 6,
+        "OrdenArtículo": 3
     },
     {
         "Referencia": "164",
         "Artículo": "POPCORN CLASICOS +-15 pcs ",
         "Familia": "POLLO POR PIEZAS",
         "Subfamilia": "POPCORN NUGGETS",
-        "Precio": "8.90",
+        "Precio": 8.9,
         "Imagen": "Nuggets2.png",
-        "OrdenFamilia": "1",
-        "OrdenSubfamilia": "6",
-        "OrdenArtículo": "4"
+        "OrdenFamilia": 1,
+        "OrdenSubfamilia": 6,
+        "OrdenArtículo": 4
     },
     {
         "Referencia": "43",
         "Artículo": "SALSA BBQ KOREANA",
         "Familia": "SALSAS CASERAS",
         "Subfamilia": "",
-        "Precio": "0.90",
+        "Precio": 0.9,
         "Imagen": "salsa bbq koreana.png",
-        "OrdenFamilia": "4",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "3"
+        "OrdenFamilia": 4,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 3
     },
     {
         "Referencia": "44",
         "Artículo": "SALSA HONEY BUTTER",
         "Familia": "SALSAS CASERAS",
         "Subfamilia": "",
-        "Precio": "0.90",
+        "Precio": 0.9,
         "Imagen": "salsa honey butter.png",
-        "OrdenFamilia": "4",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "4"
+        "OrdenFamilia": 4,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 4
     },
     {
         "Referencia": "45",
         "Artículo": "SALSA MOSTAZA Y MIEL",
         "Familia": "SALSAS CASERAS",
         "Subfamilia": "",
-        "Precio": "0.90",
+        "Precio": 0.9,
         "Imagen": "salsa mostaza y miel.png",
-        "OrdenFamilia": "4",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "5"
+        "OrdenFamilia": 4,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 5
     },
     {
         "Referencia": "46",
         "Artículo": "SALSA PICANTE",
         "Familia": "SALSAS CASERAS",
         "Subfamilia": "",
-        "Precio": "0.90",
+        "Precio": 0.9,
         "Imagen": "salsa picante.png",
-        "OrdenFamilia": "4",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "6"
+        "OrdenFamilia": 4,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 6
     },
     {
         "Referencia": "47",
         "Artículo": "SALSA SOJA DULCE",
         "Familia": "SALSAS CASERAS",
         "Subfamilia": "",
-        "Precio": "0.90",
+        "Precio": 0.9,
         "Imagen": "salsa soja dulce.png",
-        "OrdenFamilia": "4",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "7"
+        "OrdenFamilia": 4,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 7
     },
     {
         "Referencia": "48",
         "Artículo": "SALSA YOGURT",
         "Familia": "SALSAS CASERAS",
         "Subfamilia": "",
-        "Precio": "0.90",
+        "Precio": 0.9,
         "Imagen": "salsa yogurt.png",
-        "OrdenFamilia": "4",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "8"
+        "OrdenFamilia": 4,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 8
     },
     {
         "Referencia": "21",
         "Artículo": "SOUTH BEACH",
         "Familia": "HAMBURGUESAS",
         "Subfamilia": "",
-        "Precio": "9.90",
+        "Precio": 9.9,
         "Imagen": "SouthBeach.png",
-        "OrdenFamilia": "2",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "1"
+        "OrdenFamilia": 2,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 1
     },
     {
         "Referencia": "22",
         "Artículo": "SWEET ALABAMA",
         "Familia": "HAMBURGUESAS",
         "Subfamilia": "",
-        "Precio": "9.90",
+        "Precio": 9.9,
         "Imagen": "SweetAlabama.png",
-        "OrdenFamilia": "2",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 2,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 2
     },
     {
         "Referencia": "23",
         "Artículo": "SWEET ALABAMA VEGETARIANA",
         "Familia": "HAMBURGUESAS",
         "Subfamilia": "",
-        "Precio": "9.90",
+        "Precio": 9.9,
         "Imagen": "SweetAlabama.png",
-        "OrdenFamilia": "2",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "3"
+        "OrdenFamilia": 2,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 3
     },
     {
-        "Referencia": "510",
+        "Referencia": "610",
         "Artículo": "SPRITE",
         "Familia": "REFRESCOS",
         "Subfamilia": "",
-        "Precio": "2.90",
+        "Precio": 2.9,
         "Imagen": "sprite.png",
-        "OrdenFamilia": "5",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "10"
+        "OrdenFamilia": 5,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 10
     },
     {
         "Referencia": "73",
         "Artículo": "STELLA ARTOIS",
         "Familia": "CERVEZAS",
         "Subfamilia": "",
-        "Precio": "3.90",
+        "Precio": 3.9,
         "Imagen": "stella artois.png",
-        "OrdenFamilia": "7",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "3"
+        "OrdenFamilia": 7,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 3
     },
     {
         "Referencia": "57",
         "Artículo": "BACON DREAM",
         "Familia": "PARA ACOMPAÑAR",
         "Subfamilia": "",
-        "Precio": "7.00",
+        "Precio": 7.0,
         "Imagen": "papas locas.png",
-        "OrdenFamilia": "5",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "7"
+        "OrdenFamilia": 5,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 7
     },
     {
         "Referencia": "31",
         "Artículo": "CHICKEN WRAP",
         "Familia": "WRAPS",
         "Subfamilia": "",
-        "Precio": "9.9",
+        "Precio": 9.9,
         "Imagen": "wrap.png",
-        "OrdenFamilia": "3",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "1"
+        "OrdenFamilia": 3,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 1
     },
     {
         "Referencia": "32",
         "Artículo": "VEGETARIAN CHICKEN WRAP",
         "Familia": "WRAPS",
         "Subfamilia": "",
-        "Precio": "9.9",
+        "Precio": 9.9,
         "Imagen": "wrap.png",
-        "OrdenFamilia": "3",
-        "OrdenSubfamilia": "",
-        "OrdenArtículo": "2"
+        "OrdenFamilia": 3,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 2
+    },
+    {
+        "Referencia": "213",
+        "Artículo": "prueba",
+        "Familia": "HAMBURGUESAS",
+        "Subfamilia": "",
+        "Precio": 3.0,
+        "Imagen": "default.png",
+        "OrdenFamilia": 0,
+        "OrdenSubfamilia": 0,
+        "OrdenArtículo": 67
     }
 ]
