@@ -139,8 +139,8 @@ const firebaseConfig = {
   // Inicializar la aplicación
   loadCategories();
   
+  // Modo Oscuro (opcional)
  
-  // Modo Oscuro
 document.addEventListener('DOMContentLoaded', () => {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
 
@@ -181,5 +181,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         localStorage.setItem('darkMode', 'disabled');
     }
-});
 
+// Manejar el toggle del menú
+if (menuToggle && sidebar) {
+    menuToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        sidebar.classList.toggle('active');
+    });
+}
+});
