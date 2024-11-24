@@ -9,7 +9,13 @@
 
 
 /* Estilos generales */
+/* Tamaño de fuente base */
+html {
+    font-size: 16px;
+}
+
 body {
+    font-size: 1rem; /* 16px */
     font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -183,27 +189,108 @@ a {
     }
 }
 
+/* Ajustes para móviles */
 @media (max-width: 480px) {
+    body {
+        font-size: 1.125rem; /* 18px */
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
 
+    .hero p {
+        font-size: 1.1rem;
+    }
+
     .btn {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
-
-    .products h2 {
-        font-size: 1.5rem;
-    }
-
-    .products p {
+        padding: 12px 24px;
         font-size: 1rem;
     }
 
-    .carousel-control {
-        font-size: 1.5rem;
-        padding: 5px;
+    .products h2 {
+        font-size: 1.8rem;
+    }
+
+    .products p {
+        font-size: 1.1rem;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .product-card p {
+        font-size: 1.1rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    /* Ocultar la barra lateral en móviles */
+    .pagina-menu .container {
+        flex-direction: column;
+    }
+
+    .pagina-menu .sidebar {
+        display: none;
+    }
+
+    .pagina-menu .main-content {
+        padding: 10px;
+    }
+
+    /* Ajustar los ítems del menú para ocupar todo el ancho */
+    .pagina-menu .menu-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Ajustar tamaños de fuente en el menú */
+    .pagina-menu .main-content h2 {
+        font-size: 2rem;
+    }
+
+    .pagina-menu .menu-item h5 {
+        font-size: 1.3rem;
+    }
+
+    .pagina-menu .menu-item .precio {
+        font-size: 1.1rem;
+    }
+}
+
+/* Ajustes para tabletas */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+
+    .products h2 {
+        font-size: 2rem;
+    }
+
+    .product-card {
+        width: 45%;
+    }
+
+    nav a {
+        font-size: 1.1rem;
     }
 }
 
