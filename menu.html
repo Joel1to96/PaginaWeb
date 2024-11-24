@@ -6,10 +6,15 @@
     <!-- Enlaces a estilos y fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Iconos de FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <link rel="stylesheet" href="styles.css">
-    <!-- Enlace al script -->
+    <!-- Firebase App (el SDK central de Firebase) -->
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-app-compat.js"></script>
+    <!-- Firebase Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore-compat.js"></script>
+    <!-- Tu script principal -->
     <script src="script_menu.js" defer></script>
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -41,8 +46,8 @@
         <main class="main-content">
             <section id="letrasmenu" class="menu">
                 <h2>Nuestro Menú</h2>
-                <div id="menu-items">
-                    <!-- Mensaje por defecto -->
+                <div id="menu-items" class="menu-items">
+                    <!-- Los artículos se cargarán aquí dinámicamente -->
                     <p>Por favor, seleccione una categoría para ver los artículos.</p>
                 </div>
             </section>
@@ -59,13 +64,13 @@
     <footer>
         <p>&copy; 2023 Chicken Crunchers</p>
         <p>Síguenos en:</p>
-        <a href="https://www.facebook.com/profile.php?id=61566740222272" target="blank">
+        <a href="https://www.facebook.com/profile.php?id=61566740222272" target="_blank">
             <img src="facebook.png" alt="Facebook">
         </a>
-        <a href="https://www.instagram.com/chickencrunchers/" target="blank">
+        <a href="https://www.instagram.com/chickencrunchers/" target="_blank">
             <img src="instagram.png" alt="Instagram">
         </a>
-        <a href="https://x.com/chickencunchers?s=21&t=tUd2LM4uxL0HQbIPGT7hJA" target="blank">
+        <a href="https://x.com/chickencunchers?s=21&t=tUd2LM4uxL0HQbIPGT7hJA" target="_blank">
             <img src="x.png" alt="Twitter">
         </a>
     </footer>
