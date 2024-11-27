@@ -1,0 +1,579 @@
+/* ===========================================
+   Variables de Colores
+   =========================================== */
+   :root {
+    --color-rosa: #FF69B4;
+    --color-turquesa: #40E0D0;
+    --color-amarillo: #FFD700;
+    --color-fondo: #141414;
+    --color-texto: #FFFFFF;
+}
+
+/* ===========================================
+   Estilos Generales
+   =========================================== */
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem; /* 16px */
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===========================================
+   Encabezado
+   =========================================== */
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header img {
+    height: 50px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.header nav a:hover {
+    color: #FF006C;
+}
+
+/* ===========================================
+   Sección Hero
+   =========================================== */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.hero-left, .hero-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-left {
+    padding-right: 20px;
+    /* Efecto de zoom-in al cargar */
+    animation: zoomIn 1s ease-in-out;
+}
+
+.hero-right {
+    text-align: center;
+    /* Efecto de zoom-in al cargar */
+    animation: zoomIn 1s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #FF006C;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #FF006C;
+}
+
+.hero-right img {
+    /* Animación de flotación */
+    animation: float 1s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+/* Animaciones */
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ===========================================
+   Botón General
+   =========================================== */
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FF006C;
+    color: #fff;
+    border: none;
+    border-radius: 1000px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #e6005f;
+}
+
+/* ===========================================
+   Sección de Productos (Carrusel)
+   =========================================== */
+.products {
+    padding: 0;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    color: #FF006C;
+    margin: 40px 0 10px 0;
+}
+
+.products p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #FF006C;
+}
+
+/* ===========================================
+   Pie de Página
+   =========================================== */
+footer {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+footer a img {
+    width: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+footer a img:hover {
+    transform: scale(1.1);
+}
+
+/* ===========================================
+   Botón de Glovo
+   =========================================== */
+.boton-glovo {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--color-amarillo);
+    color: var(--color-fondo);
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boton-glovo:hover {
+    background-color: var(--color-rosa);
+}
+
+/* ===========================================
+   Estilos Responsivos Generales
+   =========================================== */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left, .hero-right {
+        padding: 0;
+    }
+
+    .hero-left {
+        order: 2;
+    }
+
+    .hero-right {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .products h2 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+
+    .products h2 {
+        font-size: 1.8rem;
+    }
+
+    .products p {
+        font-size: 1.1rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* ===========================================
+   Modo Oscuro General
+   =========================================== */
+body.dark-mode {
+    background-color: #141414;
+    color: #ffffff;
+}
+
+body.dark-mode .header {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .header nav a {
+    color: #ffffff;
+}
+
+body.dark-mode .header nav a:hover {
+    color: #e6005f;
+}
+
+body.dark-mode .hero {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .hero h1,
+body.dark-mode .hero p {
+    color: #ffffff;
+}
+
+body.dark-mode .btn {
+    background-color: #e6005f;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #e6005f;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode footer p,
+body.dark-mode footer a {
+    color: #ffffff;
+}
+
+/* Transiciones para un cambio suave */
+body, .header, .hero, .product-card, .footer {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* ===========================================
+   Menú de Navegación Superior (Categorías)
+   =========================================== */
+.menu-navegacion {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    position: sticky;
+    top: 80px; /* Ajusta este valor a la altura de tu header */
+    z-index: 999;
+}
+
+.menu-navegacion a {
+    flex: 0 0 auto;
+    margin: 0 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+}
+
+.menu-navegacion a.active {
+    background-color: #FF006C;
+    color: #fff;
+}
+
+.menu-navegacion::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-navegacion {
+        padding: 10px;
+    }
+
+    .menu-navegacion a {
+        margin: 0 5px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Modo Oscuro para el Menú de Navegación */
+body.dark-mode .menu-navegacion {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .menu-navegacion a {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .menu-navegacion a.active {
+    background-color: #e6005f;
+    color: #fff;
+}
+
+/* ===========================================
+   Contenido Principal de la Página del Menú
+   =========================================== */
+/* Asegúrate de que estas clases solo afecten a la página del menú */
+.pagina-menu .main-content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: calc(70px + 50px); /* Altura del header y del menú */
+}
+
+.pagina-menu .main-content h2 {
+    font-size: 32px;
+    color: #FF006C;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.pagina-menu .main-content h3 {
+    font-size: 24px;
+    color: var(--color-amarillo);
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.pagina-menu .main-content p {
+    font-size: 18px;
+}
+
+/* ===========================================
+   Secciones y Títulos
+   =========================================== */
+.family-title {
+    font-size: 28px;
+    color: var(--color-amarillo);
+    margin: 30px 0 10px;
+    text-align: left;
+}
+
+.subfamily-title {
+    font-size: 24px;
+    color: var(--color-rosa);
+    margin: 20px 0 10px;
+    text-align: left;
+}
+
+.subfamily-section {
+    margin-bottom: 20px;
+}
+
+.menu-section {
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+/* ===========================================
+   Estilos para los Ítems del Menú
+   =========================================== */
+.pagina-menu .menu-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.pagina-menu .menu-item h5 {
+    font-size: 18px;
+    color: #FF69B4;
+    margin: 0 0 5px;
+}
+
+.pagina-menu .menu-item .precio {
+    font-size: 16px;
+    color: var(--color-rosa);
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Contenedor de la imagen */
+.pagina-menu .image-container {
+    flex: 0 0 80px; /* Ancho y alto fijos */
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.pagina-menu .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ajusta la imagen sin recortarla */
+}
+
+/* Contenedor de detalles */
+.pagina-menu .details-container {
+    flex: 1;
+}
+
+.pagina-menu .details-container h5 {
+    font-size: 18px;
+    color: #FF69B4;
+    margin: 0 0 5px;
+}
+
+.pagina-menu .details-container .descripcion {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 5px;
+}
+
+.pagina-menu .details-container .precio {
+    font-size: 16px;
+    color: var(--color-rosa);
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Modo Oscuro para los Ítems del Menú */
+body.dark-mode .pagina-menu .menu-item {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode .pagina-menu .menu-item h5 {
+    color: #fff;
+}
+
+body.dark-mode .pagina-menu .details-container .descripcion {
+    color: #ccc;
+}
+
+body.dark-mode .pagina-menu .menu-item .precio {
+    color: #e6005f;
+}
+
+/* Estilos Responsivos para los Ítems del Menú */
+@media (max-width: 768px) {
+    .pagina-menu .menu-item {
+        align-items: center;
+    }
+
+    .pagina-menu .image-container {
+        margin-right: 10;
+    }
+
+    .pagina-menu .details-container {
+        text-align: left;
+    }
+}
+
+/* ===========================================
+   Otros Estilos
+   =========================================== */
+/* Suavizar el scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ocultar la barra lateral si aún existe */
+.pagina-menu .sidebar {
+    display: none;
+}
+
+/* ===========================================
+   Ajustes Finales
+   =========================================== */
+/* Ajuste de padding superior en caso de conflictos */
+.pagina-menu .main-content {
+    padding-top: calc(70px + 50px); /* Ajusta este valor según la altura del header y del menú */
+}
